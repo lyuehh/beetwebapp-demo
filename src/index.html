@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>My App</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <!-- build:css({.tmp,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/beet-thirdparty-assets/styles/admin.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp,src}) styles/main.css -->
+    <link rel="stylesheet" href="app/main/main.css">
+    <!-- endbuild -->
+
+</head>
+<body>
+
+    <div ng-include="'components/navbar/navbar.html'"></div>
+    <div class="site-content">
+        <div ui-view></div>
+    </div>
+    <div ng-include=""></div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/beet-thirdparty-assets/scripts/av.js"></script>
+    <script src="bower_components/beet-thirdparty-assets/scripts/highcharts.js"></script>
+    <!-- endbower -->
+
+    <!-- endbuild -->
+
+    <!-- build:js({src,.tmp}) scripts/main.js -->
+    <script src="app/app.js"></script>
+    <script src="app/main/main.ctrl.js"></script>
+    <script src="components/navbar/navbar.ctrl.js"></script>
+
+    <!-- inject:partials -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+</body>
+</html>
