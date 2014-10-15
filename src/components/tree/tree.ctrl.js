@@ -10,7 +10,7 @@
         TreeServ.get().success(function(data) {
             var treeData = data.jtree;
             var firstNode = treeData[0];
-            firstNode.selected = "selected";
+            firstNode.selected = 'selected';
 
             // debugger;
             vm.treeData = treeData;

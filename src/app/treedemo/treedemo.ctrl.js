@@ -12,8 +12,6 @@
         $scope.$on('nodeChanged', function(e, val) {
             vm.treeData = val;
         });
-
     }
-
 
 })();

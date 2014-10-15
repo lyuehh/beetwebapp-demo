@@ -13,7 +13,8 @@
     "font-awesome": "*",
     "moment": "*",
     "d3": "*",
-    "beet-thirdparty-assets": "0.0.1"
+    "beet-thirdparty-assets": "0.0.1",
+    "beet-treeview": "0.0.1"
   }
 }
 
