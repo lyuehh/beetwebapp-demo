@@ -5,8 +5,8 @@
     .directive('beetHighcharts', beetHighcharts);
 
     function beetHighcharts() {
-        var link = function($scope, $element, $attrs) {
-            $element.highcharts($scope.config);
+        var link = function(scope, element, attrs) {
+            element.highcharts(scope.config);
         };
         return {
             link: link,

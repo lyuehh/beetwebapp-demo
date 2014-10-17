@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app', ['ui.router', 'app.navbar', 'app.treedemo', 'app.chart'])
+angular.module('app', ['ui.router', 'app.navbar', 'app.treedemo', 'app.chart', 'app.tabdemo'])
 .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
     .state('index', {
@@ -19,6 +19,12 @@ angular.module('app', ['ui.router', 'app.navbar', 'app.treedemo', 'app.chart'])
         url: '/chart',
         templateUrl: 'app/chart/chart.html',
         controller: 'ChartCtrl',
+        controllerAs: 'vm'
+    })
+    .state('tab', {
+        url: '/tab',
+        templateUrl: 'app/tabdemo/tabdemo.html',
+        controller: 'TabDemoCtrl',
         controllerAs: 'vm'
     })
     .state('about', {
