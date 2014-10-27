@@ -10,7 +10,7 @@ Beetwebapp-demo
 ```
 安装 node: http://nodejs.org/
 安装 yo 等:  npm install -g yo bower gulp
-git clone git@git.n.xiaomi.com:feteam/beetwebapp-demo.git
+git clone 
 cd beetwebapp-demo
 npm install ## 这步比较慢..
 bower install
